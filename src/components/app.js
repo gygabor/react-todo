@@ -16,7 +16,6 @@ class App extends Component {
   onClick() {
     let todosCopy = this.state.todoList.slice();
     todosCopy.push(this.state.currentTodo);
-    console.log(todosCopy)
     this.setState({ todoList: todosCopy, currentTodo: "" });
   }
 
